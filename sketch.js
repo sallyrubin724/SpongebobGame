@@ -1,6 +1,7 @@
 let W = 800, H = 600;
 let lives = 3;
 let score = 0;
+let level=1;
 
 // This list 'jellyfish' stores multiple objects, managing the data for the game characters.
 let jellyfish = []; 
@@ -50,8 +51,15 @@ function draw() {
 function manageJellyfishLogic(winThreshold) {
   
   if (score >= winThreshold) {
-    image(winner, 215, 150, W / 2, H / 2);
+    level=level+1;
+    score=0;
+    
+   
+  }
+  if (level>5){
+     image(winner, 215, 150, W / 2, H / 2);
     return; 
+    
   }
 
   if (lives <= 0) {
@@ -65,7 +73,7 @@ function manageJellyfishLogic(winThreshold) {
     image(jellyfishImg, j.x, j.y, j.w, j.h);
 
     if (j.y + j.h > sb.y && j.x > sb.x && j.x < sb.x + sb.w) {
-      score++;
+      score=score+level;
       resetSingleJelly(j);
     }
 
@@ -86,8 +94,9 @@ function drawGame() {
   textAlign(LEFT);
   text("Lives: " + lives, 20, 80);
   text("Score: " + score, 20, 110);
+  text("Level:"+level, 20, 140);
  
-  manageJellyfishLogic(15); 
+  manageJellyfishLogic(level*5); 
 }
 
 // This function populates the 'jellyfish' list, allowing the program to 

@@ -1,5 +1,5 @@
 Add different levels to increase variety
-
+6/12 impliemnted levels by doing score=score+level; and making the levels level= level * 5
 
 Adjust difficulty and game length
 

@@ -3,9 +3,9 @@ Add different levels to increase variety
 
 Adjust difficulty and game length
 
-
+customizable global variables to control the number of levels and make the jellyfish fall faster with each passing round.
 Increase character movement speed (currently too slow)
-
+I increased the value of sb.speed from 7 to 11 to make SpongeBob move much faster when the arrow keys are pressed
 
 Add harder levels / more challenging aspects
 

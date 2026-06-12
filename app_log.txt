@@ -1,0 +1,25 @@
+Add different levels to increase variety
+
+
+Adjust difficulty and game length
+
+
+Increase character movement speed (currently too slow)
+
+
+Add harder levels / more challenging aspects
+
+
+Implement a slower falling speed for jellyfish
+
+
+Add an option/tutorial to make the game easier at first, as jellyfish move too fast initially
+
+
+Incorporate power-ups
+
+
+Add different backgrounds and characters for each level
+
+
+Add more lives or an easier (but not too easy) way to grab jellyfish
